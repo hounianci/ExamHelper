@@ -1,0 +1,60 @@
+Object类的主要方法：
+1.getClass（）：返回当前对象所属的类信息，返回Class对象
+2.toString（）：按字符串对象返回当前对象的有关信息
+3.equals（Object obj）：比较两个对象是否为同一个对象
+
+对象引用转型时的规则：
+1.沿类层次向上转型总是合法的
+2.对于向下转型，只能是祖先转型到后代类
+
+覆盖方法是的规则：
+1.允许访问范围不能小于原方法
+2.抛出的异常不能比原方法更多
+
+数据流定义：
+一组有顺序的、有起点和终点的字节集合。
+
+支持回推操作的数据流中常用的方法：
+1.markSupported（）：用于测试数据流是否支持回推操作，当一个数据流支持mark（）和rest（）方法时返回true
+2.mark（int markarea）：用于标记数据流的当前位置，并划出一个缓冲区
+3.reset（）：将输入流重新定位到对此流最后调用mark方法时的位置
+
+文件名相关方法：
+1.getName（）
+2.getPath（）：获取文件路径
+3.getAbsolutePath（）：获取文件绝对路径
+4.getParent（）：文件父目录名称
+5.renameTo（File newName）：更改文件名
+
+文件测定方法：
+1.exists（）：文件对象是否存在
+2.canWrite（）：文件对象是否可写
+3.canRead（）
+4.isFile（）
+5.isDirectory（）
+
+常用文件信息和方法：
+1.long lastModified（）：最后修改日期
+2.long length（）
+3.boolean delete（）
+4.mkdir（）
+5.mkdirs（）
+
+设计图形界面步骤：
+选取组件、设计布局、相应事件
+
+组件分类：
+容器组件、非容器组件
+
+Swing中的顶层容器：
+1.JFrame 带有标题行和控制按钮的独立窗口
+2.JApplet小应用程序包含在浏览器窗口中
+3.JDialog 对话框
+4.JWindow 不带标题和控制行的窗口
+
+JFrame常用方法：
+1.setBounds， 移动并调整框架大小
+2.setSize， 设置大小
+3.setBackground（Color bg）， 设置背景色
+4.setVisible（），设置框架可见
+5.pack， 调整框架大小
